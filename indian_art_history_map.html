@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f0727181d13c6a395d90b70eb069086 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f0727181d13c6a395d90b70eb069086" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f0727181d13c6a395d90b70eb069086 = L.map(
+                "map_7f0727181d13c6a395d90b70eb069086",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_21b465a7afcaffd6198f7de05a604c7c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_21b465a7afcaffd6198f7de05a604c7c.addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+            var marker_765c3040fb93b1fead9225d6d41fca64 = L.marker(
+                [20.5522, 75.7033],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_6cb99c3a28dd9cc568052b75462d1529 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_5abb58b1c60700a6918f62ef68faf1a4 = $(`<div id="html_5abb58b1c60700a6918f62ef68faf1a4" style="width: 100.0%; height: 100.0%;">     <h4>Ajanta Caves</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Ajanta_%2863%29.jpg/600px-Ajanta_%2863%29.jpg" width="300px"><br>     <p>Renowned for ancient Buddhist paintings and sculptures, the Ajanta Caves are a significant site for Indian art.</p>     <p><b>Historical Context:</b> Dating back to the 2nd century BCE, these caves provide insight into the artistic and religious practices of ancient India.</p>     </div>`)[0];
+                popup_6cb99c3a28dd9cc568052b75462d1529.setContent(html_5abb58b1c60700a6918f62ef68faf1a4);
+            
+        
+
+        marker_765c3040fb93b1fead9225d6d41fca64.bindPopup(popup_6cb99c3a28dd9cc568052b75462d1529)
+        ;
+
+        
+    
+    
+            marker_765c3040fb93b1fead9225d6d41fca64.bindTooltip(
+                `<div>
+                     Click for more about Ajanta Caves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5bee6b7f1497faebee977c172df7101d = L.marker(
+                [20.0269, 75.1793],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_bceadd7b5be3e335aca699987373f29b = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_06a61047fcd87d575561fd2fefeb254a = $(`<div id="html_06a61047fcd87d575561fd2fefeb254a" style="width: 100.0%; height: 100.0%;">     <h4>Ellora Caves</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/1_Dancing_Shiva%2C_Cave_21_at_Ellora.jpg/370px-1_Dancing_Shiva%2C_Cave_21_at_Ellora.jpg" width="300px"><br>     <p>A monumental complex of rock-cut caves representing Buddhism, Hinduism, and Jainism.</p>     <p><b>Historical Context:</b> Constructed between the 5th and 10th centuries, Ellora represents the pinnacle of Indian rock-cut architecture.</p>     </div>`)[0];
+                popup_bceadd7b5be3e335aca699987373f29b.setContent(html_06a61047fcd87d575561fd2fefeb254a);
+            
+        
+
+        marker_5bee6b7f1497faebee977c172df7101d.bindPopup(popup_bceadd7b5be3e335aca699987373f29b)
+        ;
+
+        
+    
+    
+            marker_5bee6b7f1497faebee977c172df7101d.bindTooltip(
+                `<div>
+                     Click for more about Ellora Caves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3907b656c85eaf7eed36f1923d5abec = L.marker(
+                [24.8318, 79.9199],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_6400ae7cf4adfd2fa4cab9d84c16fd3c = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_78f2996615b9799f5d144940289e4028 = $(`<div id="html_78f2996615b9799f5d144940289e4028" style="width: 100.0%; height: 100.0%;">     <h4>Khajuraho Group of Monuments</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Khajuraho_Group_of_Monuments_4.jpg/440px-Khajuraho_Group_of_Monuments_4.jpg" width="300px"><br>     <p>Famous for their Nagara-style architectural symbolism and erotic sculptures.</p>     <p><b>Historical Context:</b> Constructed between 950 and 1050 AD, these temples showcase the cultural heritage of the Chandela dynasty.</p>     </div>`)[0];
+                popup_6400ae7cf4adfd2fa4cab9d84c16fd3c.setContent(html_78f2996615b9799f5d144940289e4028);
+            
+        
+
+        marker_c3907b656c85eaf7eed36f1923d5abec.bindPopup(popup_6400ae7cf4adfd2fa4cab9d84c16fd3c)
+        ;
+
+        
+    
+    
+            marker_c3907b656c85eaf7eed36f1923d5abec.bindTooltip(
+                `<div>
+                     Click for more about Khajuraho Group of Monuments
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67d2cd026309b1de8efba03b63adf43c = L.marker(
+                [18.9633, 72.9312],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_0c3a19425ecedff31e2c5416f122e7b6 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8dc60c14a36e6fbf6832e31fbb16e799 = $(`<div id="html_8dc60c14a36e6fbf6832e31fbb16e799" style="width: 100.0%; height: 100.0%;">     <h4>Elephanta Caves</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Elephanta_Caves_Trimurti.jpg/440px-Elephanta_Caves_Trimurti.jpg" width="300px"><br>     <p>A collection of cave temples predominantly dedicated to the Hindu god Shiva.</p>     <p><b>Historical Context:</b> These caves date back to the 5th to 8th centuries and display a fusion of Hindu and Buddhist influences.</p>     </div>`)[0];
+                popup_0c3a19425ecedff31e2c5416f122e7b6.setContent(html_8dc60c14a36e6fbf6832e31fbb16e799);
+            
+        
+
+        marker_67d2cd026309b1de8efba03b63adf43c.bindPopup(popup_0c3a19425ecedff31e2c5416f122e7b6)
+        ;
+
+        
+    
+    
+            marker_67d2cd026309b1de8efba03b63adf43c.bindTooltip(
+                `<div>
+                     Click for more about Elephanta Caves
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f97b933175e7736fb615810a94936a8 = L.marker(
+                [19.8876, 86.0945],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_3f20f0f2190c40873af7efee40d6d542 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_4442780afbca45ef169c5134adbb4f84 = $(`<div id="html_4442780afbca45ef169c5134adbb4f84" style="width: 100.0%; height: 100.0%;">     <h4>Konark Sun Temple</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Konarka_Temple.jpg/440px-Konarka_Temple.jpg" width="300px"><br>     <p>A 13th-century temple dedicated to the Sun God, Surya, known for its intricate stone carvings.</p>     <p><b>Historical Context:</b> Built in 1250 AD, the temple is a UNESCO World Heritage site and a stunning example of Kalinga architecture.</p>     </div>`)[0];
+                popup_3f20f0f2190c40873af7efee40d6d542.setContent(html_4442780afbca45ef169c5134adbb4f84);
+            
+        
+
+        marker_0f97b933175e7736fb615810a94936a8.bindPopup(popup_3f20f0f2190c40873af7efee40d6d542)
+        ;
+
+        
+    
+    
+            marker_0f97b933175e7736fb615810a94936a8.bindTooltip(
+                `<div>
+                     Click for more about Konark Sun Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5b249c8ed7e63b8d0edd9947adcf4ba = L.marker(
+                [23.4793, 77.7396],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_bf9f652250a52bac92a7343340e332b1 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_b28ce49117bbf8f9a5b39d0d5736b51a = $(`<div id="html_b28ce49117bbf8f9a5b39d0d5736b51a" style="width: 100.0%; height: 100.0%;">     <h4>Sanchi Stupa</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG/500px-East_Gateway_-_Stupa_1_-_Sanchi_Hill_2013-02-21_4398.JPG" width="300px"><br>     <p>One of the oldest stone structures in India, originally commissioned by Emperor Ashoka.</p>     <p><b>Historical Context:</b> Dating back to the 3rd century BCE, Sanchi is a major Buddhist pilgrimage site.</p>     </div>`)[0];
+                popup_bf9f652250a52bac92a7343340e332b1.setContent(html_b28ce49117bbf8f9a5b39d0d5736b51a);
+            
+        
+
+        marker_a5b249c8ed7e63b8d0edd9947adcf4ba.bindPopup(popup_bf9f652250a52bac92a7343340e332b1)
+        ;
+
+        
+    
+    
+            marker_a5b249c8ed7e63b8d0edd9947adcf4ba.bindTooltip(
+                `<div>
+                     Click for more about Sanchi Stupa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e49264d5c8dbecb9e1278e3e1e1c409 = L.marker(
+                [15.335, 76.46],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_37b5a7b839c626da7b4736a094c812f1 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_dfbda500d1e1c809f60f2581e9722e11 = $(`<div id="html_dfbda500d1e1c809f60f2581e9722e11" style="width: 100.0%; height: 100.0%;">     <h4>Hampi Monuments</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hampi_virupaksha_temple.jpg/440px-Hampi_virupaksha_temple.jpg" width="300px"><br>     <p>The ruins of Hampi, a UNESCO World Heritage site, reflect the grandeur of the Vijayanagara Empire.</p>     <p><b>Historical Context:</b> Hampi was one of the richest and largest cities in the world during the 15th and 16th centuries.</p>     </div>`)[0];
+                popup_37b5a7b839c626da7b4736a094c812f1.setContent(html_dfbda500d1e1c809f60f2581e9722e11);
+            
+        
+
+        marker_8e49264d5c8dbecb9e1278e3e1e1c409.bindPopup(popup_37b5a7b839c626da7b4736a094c812f1)
+        ;
+
+        
+    
+    
+            marker_8e49264d5c8dbecb9e1278e3e1e1c409.bindTooltip(
+                `<div>
+                     Click for more about Hampi Monuments
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f65ec23cadab5a1acf36b3fb5959da35 = L.marker(
+                [10.7821, 79.1312],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_094b5ef6ece41e5fea36896880e9b938 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_84c63d9ff28f87eba15fce4da9f6e7fb = $(`<div id="html_84c63d9ff28f87eba15fce4da9f6e7fb" style="width: 100.0%; height: 100.0%;">     <h4>Chola Temples</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/A_collage_of_Great_living_Chola_temples_UNESCO_heritage_site.jpg/520px-A_collage_of_Great_living_Chola_temples_UNESCO_heritage_site.jpg" width="300px"><br>     <p>Known for their Dravidian architecture, particularly the Brihadeeswarar Temple.</p>     <p><b>Historical Context:</b> Built during the Chola dynasty (9th-13th centuries), these temples are renowned for their sculptures and bronze artistry.</p>     </div>`)[0];
+                popup_094b5ef6ece41e5fea36896880e9b938.setContent(html_84c63d9ff28f87eba15fce4da9f6e7fb);
+            
+        
+
+        marker_f65ec23cadab5a1acf36b3fb5959da35.bindPopup(popup_094b5ef6ece41e5fea36896880e9b938)
+        ;
+
+        
+    
+    
+            marker_f65ec23cadab5a1acf36b3fb5959da35.bindTooltip(
+                `<div>
+                     Click for more about Chola Temples
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c123ec83e13234a3f2176fc532c76c67 = L.marker(
+                [27.0935, 77.6691],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_61ae5ab683f144c4262a1191ca4cf7f8 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_abf5ad30feb9df191299dc2dcafe2b10 = $(`<div id="html_abf5ad30feb9df191299dc2dcafe2b10" style="width: 100.0%; height: 100.0%;">     <h4>Fatehpur Sikri</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Fatehpur_Sikri_near_Agra_2016-03_img09.jpg/600px-Fatehpur_Sikri_near_Agra_2016-03_img09.jpg" width="300px"><br>     <p>A Mughal city built by Emperor Akbar, known for its unique blend of architectural styles.</p>     <p><b>Historical Context:</b> Established in the late 16th century, Fatehpur Sikri reflects Akbar's vision of a syncretic culture.</p>     </div>`)[0];
+                popup_61ae5ab683f144c4262a1191ca4cf7f8.setContent(html_abf5ad30feb9df191299dc2dcafe2b10);
+            
+        
+
+        marker_c123ec83e13234a3f2176fc532c76c67.bindPopup(popup_61ae5ab683f144c4262a1191ca4cf7f8)
+        ;
+
+        
+    
+    
+            marker_c123ec83e13234a3f2176fc532c76c67.bindTooltip(
+                `<div>
+                     Click for more about Fatehpur Sikri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98d924706595f6fb7e74ef3a592b6228 = L.marker(
+                [10.8531, 78.6928],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_ea6fdf7cce014838c07da37dc6822094 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_137302de1a74381016150b46efd92f1a = $(`<div id="html_137302de1a74381016150b46efd92f1a" style="width: 100.0%; height: 100.0%;">     <h4>Ranganathaswamy Temple, Srirangam</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Ranganathaswamy_temple_tiruchirappalli.jpg/440px-Ranganathaswamy_temple_tiruchirappalli.jpg" width="300px"><br>     <p>The largest functioning Hindu temple in the world, famous for its intricate gopurams.</p>     <p><b>Historical Context:</b> Dating back to the 9th century, the temple complex showcases Dravidian architecture.</p>     </div>`)[0];
+                popup_ea6fdf7cce014838c07da37dc6822094.setContent(html_137302de1a74381016150b46efd92f1a);
+            
+        
+
+        marker_98d924706595f6fb7e74ef3a592b6228.bindPopup(popup_ea6fdf7cce014838c07da37dc6822094)
+        ;
+
+        
+    
+    
+            marker_98d924706595f6fb7e74ef3a592b6228.bindTooltip(
+                `<div>
+                     Click for more about Ranganathaswamy Temple, Srirangam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87f2ae897b09309548e209346974c172 = L.marker(
+                [9.9196, 78.1192],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_83d5dd80831b68f7ea2b8dbed57d8f64 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_107f7f6288827887ddf46a4b70d84de3 = $(`<div id="html_107f7f6288827887ddf46a4b70d84de3" style="width: 100.0%; height: 100.0%;">     <h4>Madurai Meenakshi Temple</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Meenakshi_Amman_West_Tower.jpg/440px-Meenakshi_Amman_West_Tower.jpg" width="300px"><br>     <p>A historic Hindu temple dedicated to Meenakshi, a form of Parvati, known for its towering gopurams.</p>     <p><b>Historical Context:</b> Built around the 6th century and expanded in the 12th century, it is a major pilgrimage site.</p>     </div>`)[0];
+                popup_83d5dd80831b68f7ea2b8dbed57d8f64.setContent(html_107f7f6288827887ddf46a4b70d84de3);
+            
+        
+
+        marker_87f2ae897b09309548e209346974c172.bindPopup(popup_83d5dd80831b68f7ea2b8dbed57d8f64)
+        ;
+
+        
+    
+    
+            marker_87f2ae897b09309548e209346974c172.bindTooltip(
+                `<div>
+                     Click for more about Madurai Meenakshi Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_973b98d66998efd3c12bf0081ad481d7 = L.marker(
+                [22.5726, 88.3639],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_51efe1fd94162d1dbd6a247f8c1645a0 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_8643a50bcab27f9ac536333aec4148bb = $(`<div id="html_8643a50bcab27f9ac536333aec4148bb" style="width: 100.0%; height: 100.0%;">     <h4>Kalighat Paintings, Kolkata</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/India%2C_Kalighat_painting%2C_19th_century_-_Two_Aspects_of_Kali-_Kali_Enshrined_-_1980.216.b_-_Cleveland_Museum_of_Art.jpg/467px-India%2C_Kalighat_painting%2C_19th_century_-_Two_Aspects_of_Kali-_Kali_Enshrined_-_1980.216.b_-_Cleveland_Museum_of_Art.jpg" width="300px"><br>     <p>A distinct style of Indian painting that originated in the Kalighat region of Kolkata.</p>     <p><b>Historical Context:</b> Emerging in the 19th century, Kalighat paintings are known for their simple, bold strokes and socio-political themes.</p>     </div>`)[0];
+                popup_51efe1fd94162d1dbd6a247f8c1645a0.setContent(html_8643a50bcab27f9ac536333aec4148bb);
+            
+        
+
+        marker_973b98d66998efd3c12bf0081ad481d7.bindPopup(popup_51efe1fd94162d1dbd6a247f8c1645a0)
+        ;
+
+        
+    
+    
+            marker_973b98d66998efd3c12bf0081ad481d7.bindTooltip(
+                `<div>
+                     Click for more about Kalighat Paintings, Kolkata
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81d136ec9b5d991561aa97383334310e = L.marker(
+                [10.7867, 79.1378],
+                {}
+            ).addTo(map_7f0727181d13c6a395d90b70eb069086);
+        
+    
+        var popup_1e03bb9285e6cab93653a0c8fd9b2fc1 = L.popup({"maxWidth": 450});
+
+        
+            
+                var html_85fdebd4fbadcbb34238ee2feab4714a = $(`<div id="html_85fdebd4fbadcbb34238ee2feab4714a" style="width: 100.0%; height: 100.0%;">     <h4>Tanjore Paintings</h4>     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Thanjavur_art_from_south_India.jpg/440px-Thanjavur_art_from_south_India.jpg" width="300px"><br>     <p>A classical South Indian painting style that originated in the town of Thanjavur.</p>     <p><b>Historical Context:</b> Tanjore paintings are characterized by rich colors, surface richness, compact composition, and decorative jewelry.</p>     </div>`)[0];
+                popup_1e03bb9285e6cab93653a0c8fd9b2fc1.setContent(html_85fdebd4fbadcbb34238ee2feab4714a);
+            
+        
+
+        marker_81d136ec9b5d991561aa97383334310e.bindPopup(popup_1e03bb9285e6cab93653a0c8fd9b2fc1)
+        ;
+
+        
+    
+    
+            marker_81d136ec9b5d991561aa97383334310e.bindTooltip(
+                `<div>
+                     Click for more about Tanjore Paintings
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
